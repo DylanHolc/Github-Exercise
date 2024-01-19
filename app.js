@@ -10,10 +10,6 @@ for (let i = 0; i < storedTodos.length; i++) {
     newTodo.appendChild(document.createTextNode(' '));
     newTodo.appendChild(deleteBtn);
     todoList.appendChild(newTodo);
-    if (!newTodo.isCompleted) {
-        newTodo.style.textDecoration = 'line-through';
-        newTodo.isCompleted = true;
-    }
 }
 
 form.addEventListener('submit', function(e) {
